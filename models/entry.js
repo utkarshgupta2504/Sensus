@@ -29,6 +29,12 @@ const entrySchema = new mongoose.Schema(
       type: Date,
       default: Date.now(),
     },
+    //H, N, S ---> Happy, Neutral, Sad
+    category: {
+      type: String,
+      required: true,
+      default: "N",
+    },
   },
   {
     timestamps: true,
